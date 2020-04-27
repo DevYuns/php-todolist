@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+html body {
+    height: 100%;
+}
+#container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    height: 700px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+#container header {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+#container header #title a{
+    text-decoration: none;
+}
+#container header #title a:visited{
+    color: black;
+}
+
+#container main {
+    margin-left: 15px;
+}
+#container main #toDoList {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+#container main #toDoList #mainMessage {
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+#container main #toDoList .list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#container main #toDoList .list .content{
+    width: 610px;
+    margin-right: 20px;
+    overflow: hidden;
+    font-family: Georgia, sans-serif;
+}
+
+#container main #toDoList .list .content>p {
+    width: 539.141px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid gray;
+    padding: 2px;
+}
+
+#container main #toDoList .list .checkList{
+    width: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#container main #toDoList .list .imgDecor{
+    background-color: antiquewhite;
+    display: inline-block;
+}
+
+#container main #toDoList .list .checkList:hover{
+    opacity: .7;
+}
+
+#container main #toDoList .list #finishedList{
+    text-decoration : line-through;
+}
+
+#container main #toDoList .list .updateButton{
+    width: 15px;
+    margin-right: 10px;
+}
+#container main #toDoList .list .deleteButton{
+    width: 15px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#container main #toDoList .list .updateForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#container main #toDoList .list .updateForm input[type="text"]{
+    width: 610px;
+    background-color: antiquewhite;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px dashed gray;
+}
+
+#container main #toDoList .list .updateForm input[type="submit"]{
+    margin-left: 37px;
+    padding: 1px;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    background-color: antiquewhite;
+}
+
+#container main #createList {
+    height: 100px;
+}
+
+#container main #createList form input[type="text"]{
+    width: 600px;
+    background-color: antiquewhite;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+
+#container main #createList form input[type="image"]{
+    width: 15px;
+    margin-left: 10px;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    background-color: antiquewhite;
+
+}
